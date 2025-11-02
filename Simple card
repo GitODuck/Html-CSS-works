@@ -1,0 +1,59 @@
+Html file elements
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARDs</title>
+    <link rel="Stylesheet" href="card.css">
+</head>
+<body>
+   
+    <div class="card">
+        
+        <img src="man.jpeg" alt="man">
+        <div class="Desc">
+         <h3>Rahul Kumar</h3>
+         <p>Data Analyst</p>
+        </div>
+    </div>
+    
+    
+    <div class="card">
+        
+        <img src="woman.jpeg" alt="woman">
+        <div class="Desc">
+            <h3>Neha Sharma</h3>
+            <p>Software Engineer</p>
+        </div>
+    </div>
+    
+</body>  
+</html>
+
+
+  CSS file elements
+.card{
+    width:200px;
+    height:200px;
+    border:2px solid black;
+    display : inline-block;
+    margin:10px;
+    border-radius: 5px;
+    box-shadow:2px 4px 8px black;
+    transition:1s;
+}
+
+
+img{
+    width:100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.desc{
+    padding:0 2px 0 2px;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px rgb(23, 197, 122);
+}
